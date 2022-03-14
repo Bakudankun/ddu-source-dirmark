@@ -1,0 +1,56 @@
+*ddu-source-dirmark.txt*		A ddu.vim plugin for denite-dirmark
+
+Author: Bakundankun
+License: MIT license
+
+CONTENTS				*ddu-source-dirmark-contents*
+
+Introduction				|ddu-source-dirmark-introduction|
+Install					|ddu-source-dirmark-install|
+Examples				|ddu-source-dirmark-examples|
+Actions					|ddu-source-dirmark-actions|
+
+
+==============================================================================
+INTRODUCTION				*ddu-source-dirmark-introduction*
+
+This plugin provides a ddu.vim source for denite-dirmark, which is a
+directory bookmarking plugin for denite.nvim.
+
+
+==============================================================================
+INSTALL					*ddu-source-dirmark-install*
+
+Please install both "ddu.vim", "denops.vim", "ddu-kind-file", and
+"denite-dirmark". Neither python nor dentie.nvim is required.
+
+https://github.com/Shougo/ddu.vim
+https://github.com/vim-denops/denops.vim
+https://github.com/Shougo/ddu-kind-file
+https://github.com/kmnk/denite-dirmark
+
+
+==============================================================================
+EXAMPLES				*ddu-source-dirmark-examples*
+>
+	" Use the source.
+	call ddu#start({'sources': [{'name': 'dirmark'}]})
+<
+See denite-dirmark's document (|denite-dirmark-introduction|) for its
+configurations such as the directory to store the data.
+
+==============================================================================
+ACTIONS						*ddu-source-dirmark-actions*
+
+					*ddu-source-dirmark-action-dirmark*
+dirmark
+		Add a dirmark. This action is automatically defined for "file"
+		kind. This action shows some prompts to enter the dirmark's
+		group and name. Do nothing unless the item is a directory.
+
+					*ddu-source-dirmark-action-remove*
+remove
+		Remove the dirmark.
+
+
+ vim:tw=78:ts=8:noet:ft=help:norl:
