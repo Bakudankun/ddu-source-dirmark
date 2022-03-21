@@ -6,8 +6,7 @@ feature powered by [ddu.vim][2].
 [1]: https://github.com/kmnk/denite-dirmark
 [2]: https://github.com/Shougo/ddu.vim
 
-To bookmark a directory, call `dirmark` action for an item of `file` kind. That
-action is automatically defined.
+To bookmark a directory, call `dirmark` action for an item of `file` kind.
 
 
 ## Required
